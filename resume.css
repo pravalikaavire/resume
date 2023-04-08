@@ -1,0 +1,129 @@
+
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(57, 49, 96);
+  border-left: white;
+  color: white;
+  padding: 25px;
+  font-family: "Comfortaa";
+  font-size: larger;
+}
+
+
+.info {
+  background-color: rgb(47, 37, 59);
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "Comfortaa";
+}
+.info-mail{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+.info-mail p {
+    margin-left: 5px;
+  }
+.edg {
+  background-color: rgb(255, 255, 255);
+  font-family: "Comfortaa";
+}
+
+aside.asd1 {
+  width: 50%;
+  padding-left: 0px;
+  margin-left: 15px;
+  float: left;
+  font-style: italic;
+  background-color: rgb(255, 255, 255);
+  flood-opacity: initial;
+}
+
+.asd2 {
+  width: 47%;
+  float: right;
+  font-style: italic;
+  background-color: rgb(255, 255, 255);
+  flood-opacity: initial;
+  margin-bottom: 4%;
+}
+
+
+img {
+  border-radius: 70%;
+  border-color: rgb(39, 126, 144);
+  /* border-style: groove; */
+  border-width: 5px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .size {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  aside.asd1 {
+    width: 100%;
+    margin-left: 0px;
+    float: none;
+  }
+
+  .asd2 {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 1200px) {
+  .size {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  aside.asd1 {
+    width: 40%;
+    margin-left: 0px;
+    float: left;
+  }
+
+  .asd2 {
+    width: 50%;
+    float: right;
+  }
+}
+.container{
+    display: flex;
+    /* justify-content: space-around; */
+    /* border: 2px solid black; */
+    
+}
+.left-side{
+    /* border: 2px solid blue; */
+    margin-left: 2%;
+    margin-right: 3%;
+    
+}
+.right-side{
+    /* border: 2px solid red; */
+    margin-right: 2%;
+}
+@media only screen and (max-width: 600px) {
+
+    .container{
+        flex-direction: column;
+    }
+    .right-side{
+        margin-left: 2%;
+    }
+    
+  }
